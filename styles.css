@@ -41,12 +41,14 @@ body {
     outline: none;
     color: white;
     border-radius: 24px;
-    transition: 0.25s;
+    /*transition quitado para no iniciar primero transicion prederteminada de css*/
 }
 
 .form-box input[type="text"]:focus, .form-box input[type="password"]:focus {
     width: 280px;
     border-color: #ffffff;
+    /* agregado aqui, de esta manera no inicio la transicion prederteminada de css*/
+    transition: 0.25s;
 }
 
 .form-box button[type="submit"] {
@@ -60,10 +62,12 @@ body {
     outline: none;
     color: white;
     border-radius: 24px;
-    transition: 0.25s;
     cursor: pointer;
+    /*transition quitada para no iniciar primero transicion prederteminada de css*/
 }
 
 .form-box button[type="submit"]:hover {
     background: none;
+    /*agregado para suavizar la animacion de login*/
+    transition: 0.25s;
 }
